@@ -1,0 +1,32 @@
+.perfil {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.perfil__foto {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+
+.perfil__foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+}
+
+.perfil__container {
+    padding: 1em;
+}
+
+.perfil__titulo {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.perfil__texto {
+    font-size: 0.875em;
+    color: var(--cinza-secundario);
+}
