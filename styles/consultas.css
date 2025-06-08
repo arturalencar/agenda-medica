@@ -3,18 +3,20 @@ main {
 }
 
 .consultas {
-    padding: 1em;
+    padding: 0 1em ;
 }
 
 .consultas__dia {
     font-weight: 700;
-    margin-bottom: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 .consulta__cartao{
     background-color: var(--branco);
     border-radius: 0.5em;
     margin: 1em 0em;
+
+    
 }
 
 .consulta__paciente {
@@ -99,12 +101,12 @@ main {
     font-weight: 500;
     font-family: var(--fonte-principal);
     color: var(--cinza-primario);
-
+    cursor: pointer;
     border-radius: 0.6em;
     border: none;
     background-color: var(--branco);
 
-    padding: 1em 1.25em;
+    padding: 1em 0.6em;
     width: 50%;
 }
 
@@ -123,3 +125,26 @@ main {
     color: var(--branco);
     width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 1em 4em 1em;
+    }
+    .consultas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        padding: 2em 1em;
+    }
+
+    .consulta__cartao {
+        margin: 0;
+        width: 47%;    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .consulta__cartao {
+        width: 22em;    
+    }
+} 
